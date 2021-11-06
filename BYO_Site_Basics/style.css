@@ -1,101 +1,157 @@
+/* GLOBAL */
+
 * {
+  padding: 0;
   margin: 0;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: f4f4f4;
+  box-sizing: border-box;
 }
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(
-      rgba(41, 39, 39, 0.7),
-      rgba(41, 39, 39, 0.7)
-    ),
-    url(Italian_Sandwich.jpg);
+
+/* NON GLOBAL */
+
+/* HEADER */
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+  /* border: 2px black solid; */
+}
+#header {
+  /* width: 99%; */
+  margin: auto;
+  padding: 10px;
+  background-color: #424242;
+  border-bottom: 10px rgb(139, 66, 18) solid;
+  /* border: 5px black solid; */
+}
+.container-header h1 {
+  display: inline-flex;
+  margin-left: 30px;
+  /* border: 5px black solid; */
+}
+.container-header ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 40px;
+  margin-right: 30px;
+}
+links {
+  align-self: flex-end;
+}
+.links li a {
+  text-decoration: none;
+  color: white;
+}
+.links a:hover {
+  color: red;
+}
+#firstname {
+  color: rgb(139, 66, 18);
+  font-style: italic;
+  font-size: 45px;
+}
+
+/* SHOWCASE */
+
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 99%; */
+
+  margin: auto;
+  padding: 10px;
+  min-height: 400px;
+  background-image: url("images/showcase2.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-color: rgba(69, 70, 69, 0.692);
+  /* border: 2px black solid; */
 }
-.title {
-  /* position: relative;
-  top: 1px;
-  left: 700px; */
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 60px;
+.container-showcase {
+  text-align: center;
   color: white;
-  text-decoration: underline;
 }
-.p1 {
-  /* position: relative;
-  top: 10px;
-  left: 750px; */
-  width: fit-content;
-  padding: 0;
-  margin: 0 auto;
+.container-showcase h1 {
+  margin-bottom: 6%;
+  font-size: 50px;
+}
+.container-showcase p {
+  font-size: 18px;
+}
+
+/* SUBSCRIPTION */
+
+#subscribe {
+  padding: 20px;
+  /* border: 2px black solid; */
+}
+.container-subscribe {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2%;
+  padding: 5px;
+}
+.container-subscribe h2 {
+  padding-right: 30px;
+  font-size: 30px;
+}
+.container-subscribe form {
+  margin-right: 100px;
+}
+.button {
+  font-size: 16px;
+}
+
+/* MAIN CONTENTS */
+
+#main-contents {
+  min-height: 600px;
+  /* border: 2px black solid; */
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+.tile {
+  width: 400px;
+  min-height: 500px;
+  border-radius: 5%;
+  border: 2px black solid;
+}
+.tile img {
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 30px;
+  /* border: 2px black solid; */
+}
+.tile h4 {
+  text-align: center;
   font-size: 25px;
-  color: white;
+  margin: 10px;
+  /* border: 2px black solid; */
+}
+.tile p {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  min-height: 50px;
+  padding: 20px;
+  word-wrap: break-word;
+  /* border: 2px black solid; */
 }
 
-.link {
-  /* position: relative;
-  top: 25px;
-  left: 830px; */
-  padding: 0;
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 24px;
-}
-.link a {
-  color: rgb(189, 126, 54);
-}
-.table {
-  /* position: relative;
-  top: -250px;
-  left: 425px; */
+/* FOOTER */
 
-  color: white;
-}
-.links {
-  /* position: relative;
-  top: 370px;
-  left: 37%; */
-  width: fit-content;
-  padding: 0;
-  margin: 0 auto;
-  font-size: 50px;
-  font-size: 50px;
-  color: white;
-}
-.links a {
-  color: rgb(189, 126, 54);
-}
-.p2 {
-  width: fit-content;
-  padding: 0;
-  margin: 0 auto;
-  font-size: 35px;
-  color: white;
-  text-decoration: underline;
-}
-.p3 {
-  /* /* position: relative;
-  top: -275px;
-  left: 900px;
-  left: 37%; */
-  width: fit-content;
-  margin: 0 auto;
-  color: white;
-  text-decoration: underline;
-}
-.contact {
-  position: relative;
-  color: white;
-  top: -85px;
-  left: 35px;
-}
-.form {
-  position: relative;
-  top: -75px;
-  left: 35px;
-  color: white;
+#footer {
+  margin-top: 5%;
+  text-align: center;
 }

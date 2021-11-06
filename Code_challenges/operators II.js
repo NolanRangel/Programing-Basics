@@ -12,7 +12,19 @@
 
 function howMuchLeftOverCake(numberOfPieces, numberOfPeople) {
 	var leftOvers = numberOfPieces - numberOfPeople;
-	console.log(leftOvers);
+	// console.log(leftOvers);
+	if (leftOvers == 0) {
+		console.log("No leftovers for you!");
+	}
+	else if (leftOvers <= 2 && leftOvers != 0) {
+		console.log("You have some leftovers");
+	}
+	else if (leftOvers >= 3 && leftOvers <= 5) {
+		console.log("You have leftovers to share")
+	}
+	else if (leftOvers > 5) {
+		console.log("Hold another party!")
+	}
 }
 
-howMuchLeftOverCake(12, 5);
+howMuchLeftOverCake(9, 5);
